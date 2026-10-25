@@ -1,6 +1,6 @@
 # xiondigital.net/arcade
 
-The game hub for **xiondigital.net** — a static, single-page wall that opens each game on
+The game hub for **xiondigital.net**, a static single-page wall that opens each game on
 its own site.
 
 Live: **https://xiondigital.net/arcade/**
@@ -8,10 +8,10 @@ Live: **https://xiondigital.net/arcade/**
 ## What's inside
 
 ```
-index.html           the whole page (games are plain markup — works without JS)
+index.html           the whole page (games are plain markup, works without JS)
 assets/css/style.css layout, cards, responsive rules
 assets/js/arcade.js  synthesised hover/click sounds, genre filters, spotlight, clock
-assets/img/*.jpg     16:9 screenshots of each game (1200 × 675)
+assets/img/*.jpg     live in-game captures, one per title (1200 × 675, 16:9)
 ```
 
 No build step, no dependencies, no framework. Assets use relative paths, so the site works
@@ -22,10 +22,10 @@ at `/arcade/`, on a custom domain root, or straight from disk.
 | Game | Credits | Genre | Link |
 | --- | --- | --- | --- |
 | Meldra | XiØN | falling-block puzzle, solo & co-op | `xiondigital.net/meldra/` |
-| Voxel Rage: Janitscharen | Player529 | voxel brawler, co-op | `xiondigital.net/voxelrage/` |
-| Kanka Kombat: Nutella Nights | XiØN | pixel beat 'em up, co-op | `xiondigital.net/kankakombat/` |
+| Voxel Rage: Janitscharen | Player529 | beat 'em up, co-op | `xiondigital.net/voxelrage/` |
+| Kanka Kombat: Nutella Nights | XiØN | beat 'em up, co-op | `xiondigital.net/kankakombat/` |
 | Leap Buddies | XiØN | voxel platformer, two-player co-op | `xiondigital.net/leapbuddies/` |
-| Grease & Gold: World Tour | XiØN & Player529 | 16-bit beat 'em up, single player | `xiondigital.net/grease-and-gold-world-tour/` |
+| Grease & Gold: World Tour | XiØN & Player529 | beat 'em up, single player | `xiondigital.net/grease-and-gold-world-tour/` |
 
 Credits are printed under each game's description on the wall.
 
@@ -33,8 +33,8 @@ Credits are printed under each game's description on the wall.
 
 1. Drop a 16:9 screenshot into `assets/img/` (1200 × 675 JPEG, matching the rest).
 2. Copy any `<a class="game">` block in `index.html` and edit:
-   - `href` — the game's own URL
-   - `data-tags` — any of `beat-em-up`, `puzzle`, `platformer`, `co-op` (space separated)
+   - `href`: the game's own URL
+   - `data-tags`: any of `beat-em-up`, `puzzle`, `platformer`, `co-op` (space separated)
    - the `<img src>`, `alt`, tag chip, title, subtitle, meta line and
      `<span class="game__credit">`
 3. Update the title count in the hero meta line (`05 titles`) if the number changes.
@@ -73,6 +73,9 @@ Notes:
   `/arcade`, one line of copy, actions on the right, and a thin mono meta strip.
 - Cards lift, brighten and pick up a blue edge glow on hover, the screenshot zooms
   slightly, and a pointer-tracked spotlight follows the cursor.
+- Every tile is real gameplay captured from the live build, never a title screen, so the
+  wall reads as a set of running games.
+- No outbound developer links: the page only points at the games and xiondigital.net.
 - Interface sounds are generated with the Web Audio API (no audio files); the SFX toggle
   remembers its state in `localStorage`.
 - `prefers-reduced-motion` disables the background drift, reveal animations and transitions.

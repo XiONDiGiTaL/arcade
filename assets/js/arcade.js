@@ -1,5 +1,5 @@
 /* =========================================================
-   XiØN Arcade — interaction layer
+   xiondigital.net/arcade, interaction layer
    - synthesised interface sounds (no audio files)
    - genre filters for the game wall
    - pointer spotlight + scroll reveal
@@ -27,7 +27,7 @@
       this.ctx = new AudioCtx();
     },
 
-    // a soft "bubble" — sine with a small upward glide and a fast decay
+    // a soft "bubble": sine with a small upward glide and a fast decay
     tone({ from, to, dur = 0.12, type = "sine", peak = 0.05, delay = 0 }) {
       if (!this.enabled) return;
       this.init();
@@ -92,7 +92,7 @@
     });
   }
 
-  // Browsers only allow audio after a gesture — unlock quietly on the first one.
+  // Browsers only allow audio after a gesture, so unlock quietly on the first one.
   ["pointerdown", "keydown"].forEach(function (evt) {
     window.addEventListener(
       evt,
