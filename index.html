@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css?v=3" />
+  <link rel="stylesheet" href="assets/css/style.css?v=7" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23090a0c'/%3E%3Cpath d='M9 23V9h14' stroke='%233f80ff' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" />
 </head>
 <body>
@@ -60,37 +60,32 @@
       <div class="hero__inner">
         <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span>Central hub · 5 titles online</p>
 
-        <h1 class="hero__title">
-          <span class="hero__domain">xiondigital.net</span><span class="hero__slug">/arcade</span>
-        </h1>
+        <div class="hero__row">
+          <div class="hero__main">
+            <h1 class="hero__title">
+              <span class="hero__domain">xiondigital.net</span><span class="hero__slug">/arcade</span>
+            </h1>
 
-        <p class="hero__lede">
-          Five original games, running straight in your browser. Pick a window, hit launch —
-          no downloads, no accounts, just play.
-        </p>
+            <p class="hero__lede">
+              Five original games, running straight in your browser. Pick a window, hit launch —
+              no downloads, no accounts, just play.
+            </p>
+          </div>
 
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="#games">
-            Browse the wall
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
-          </a>
-          <a class="btn btn--ghost" href="https://github.com/XiONDiGiTaL" target="_blank" rel="noopener">Source on GitHub<span class="ext" aria-hidden="true">↗</span></a>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#games">
+              Browse the wall
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+            <a class="btn btn--ghost" href="https://github.com/XiONDiGiTaL" target="_blank" rel="noopener">Source on GitHub<span class="ext" aria-hidden="true">↗</span></a>
+          </div>
         </div>
 
-        <dl class="stats">
-          <div class="stats__item">
-            <dt>Titles</dt>
-            <dd>05</dd>
-          </div>
-          <div class="stats__item">
-            <dt>Online play</dt>
-            <dd>Co-op + versus</dd>
-          </div>
-          <div class="stats__item">
-            <dt>Install</dt>
-            <dd>None</dd>
-          </div>
-        </dl>
+        <ul class="hero__meta">
+          <li>05 titles</li>
+          <li>Online co-op</li>
+          <li>No installs</li>
+        </ul>
       </div>
     </section>
 
@@ -112,7 +107,7 @@
       <div class="grid" id="grid">
         <a class="game" href="https://xiondigital.net/meldra/" data-tags="puzzle co-op">
           <span class="game__screen">
-            <img src="assets/img/meldra.jpg" width="1200" height="675" alt="Meldra title screen with a pastel falling-block board" />
+            <img src="assets/img/meldra.jpg?v=3" width="1200" height="675" alt="Meldra gameplay: rows of pastel blocks stacked in the falling-block arena" />
             <span class="game__shade" aria-hidden="true"></span>
             <span class="game__tag">Puzzle</span>
             <span class="game__live"><i aria-hidden="true"></i>Online</span>
@@ -242,6 +237,6 @@
     </div>
   </footer>
 
-  <script src="assets/js/arcade.js?v=3" defer></script>
+  <script src="assets/js/arcade.js?v=4" defer></script>
 </body>
 </html>

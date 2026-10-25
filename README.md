@@ -37,7 +37,7 @@ Credits are printed under each game's description on the wall.
    - `data-tags` — any of `beat-em-up`, `puzzle`, `platformer`, `co-op` (space separated)
    - the `<img src>`, `alt`, tag chip, title, subtitle, meta line and
      `<span class="game__credit">`
-3. Update the "Titles" counter in the hero if the number changes.
+3. Update the title count in the hero meta line (`05 titles`) if the number changes.
 
 Filters read `data-tags`, so no JavaScript changes are needed. A new genre also needs a
 button in the `.filters` group with the same `data-filter` value.
@@ -69,6 +69,8 @@ Notes:
 
 - Near-black canvas (`#050607`) with one cool blue accent (`#3f80ff`) and a soft radial
   glow; no gradient text. Sora for UI, JetBrains Mono for labels and credits.
+- The masthead is deliberately compact: a small `xiondigital.net` set against a blue
+  `/arcade`, one line of copy, actions on the right, and a thin mono meta strip.
 - Cards lift, brighten and pick up a blue edge glow on hover, the screenshot zooms
   slightly, and a pointer-tracked spotlight follows the cursor.
 - Interface sounds are generated with the Web Audio API (no audio files); the SFX toggle
