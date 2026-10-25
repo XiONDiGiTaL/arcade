@@ -51,10 +51,10 @@ python -m http.server 4174
 
 ## Deploying to GitHub Pages
 
-1. Push this repository as **`Arcade`** under the `XiONDiGiTaL` account.
+1. Push this repository as **`arcade`** (lowercase) under the `XiONDiGiTaL` account.
 2. Settings → Pages → Source: *Deploy from a branch* → `main` / `/ (root)`.
-3. The project site is served at `https://xiondigital.net/arcade/` (GitHub Pages keeps the
-   repo casing, `/Arcade/` also resolves).
+3. The project site is served at `https://xiondigital.net/arcade/`. Project paths are
+   case-sensitive, so the repo name has to stay lowercase for that URL to resolve.
 
 Notes:
 
@@ -63,6 +63,7 @@ Notes:
   a project repo would conflict.
 - `index.html` links its CSS/JS with a `?v=` query, so bump it when either file changes to
   avoid stale caches on GitHub Pages.
+- The repo is `XiONDiGiTaL/arcade`; renaming it changes the published URL.
 
 ## Design notes
 
