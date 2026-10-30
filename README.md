@@ -26,7 +26,7 @@ at `/arcade/`, on a custom domain root, or straight from disk.
 | Kanka Kombat: Nutella Nights | XiØN | beat 'em up, co-op | `xiondigital.net/kankakombat/` |
 | Leap Buddies | XiØN | voxel platformer, two-player co-op | `xiondigital.net/leapbuddies/` |
 | Grease & Gold: World Tour | XiØN & Player529 | beat 'em up, single player | `xiondigital.net/grease-and-gold-world-tour/` |
-| MO: Functional | XiØN | PS1-era life sim, single player | `xiondigital.net/mofunctional/` |
+| MO: Functional | XiØN | 90s-era life sim, single player | `xiondigital.net/mofunctional/` |
 
 Credits are printed under each game's description on the wall.
 
